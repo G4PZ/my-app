@@ -4,8 +4,8 @@ import React from "react";
 
 export default function Home() {
   return (
-    <div className="flex h-[555.600px] bg-black flex-1 w-fit md:w-full">
-      <aside className="w-1/4 px-2 bg-black  flex flex-col flex-1 overflow-auto">
+    <div className="flex justify-center items-center bg-black flex-row max-w-[1920px] h-[95%]">
+      <aside className=" w-1/4 px-2 bg-black flex flex-col flex-1 overflow-auto">
         <div className="bg-cardBaseContainer rounded-xl h-full flex flex-col">
           <div className="sticky top-0 z-10 bg-cardBaseContainer px-1 py-3 rounded-t-xl shadow-md">
             <span className="flex justify-between items-center px-4">
@@ -21,12 +21,11 @@ export default function Home() {
                   aria-hidden="true"
                 >
                   <title>Crea una playlist o una carpeta</title>
-                  <path d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75a.75.75 0 0 1 .75.75" />
+                  <path d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75a.75.75 0 0 1 .75.75" />{" "}
                 </svg>
               </button>
             </span>
           </div>
-
           <div className="p-2 space-y-4 overflow-auto h-[323px]">
             <section className="bg-fondoHouse px-5 py-3 rounded-xl">
               <h2 className="font-bold text-white">Crea tu primera playlist</h2>
@@ -49,59 +48,88 @@ export default function Home() {
               </button>
             </section>
           </div>
-
-          <footer className="bg-cardBaseContainer mt-auto backdrop-blur shadow-[0_-6px_16px_rgba(0,0,0,0.45)] px-4 pb-[25px] pt-[30px] rounded-b-xl ">
-            <ul className="flex flex-wrap gap-x-6 gap-y-1 text-[13px] text-headerTexto">
+          <footer className="bg-cardBaseContainer backdrop-blur shadow-[0_-6px_16px_rgba(0,0,0,0.45)] px-4 pb-[25px] pt-[30px] rounded-b-xl ">
+            <ul className="flex flex-wrap gap-x-6 gap-y-1 text-[11px] text-headerTexto">
               <li>
-                <a href="#" className="hover:underline">
+                <a
+                  href="#"
+                  className="py-1 hover:text-white/90  decoration-1 transition-colors focus-visible:underline focus-visible:outline-none"
+                >
                   Legal
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a
+                  href="#"
+                  className="py-1 hover:text-white/90  decoration-1 transition-colors focus-visible:underline focus-visible:outline-none"
+                >
                   Seguridad y Centro de Privacidad
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a
+                  href="#"
+                  className="py-1 hover:text-white/90  decoration-1 transition-colors focus-visible:underline focus-visible:outline-none"
+                >
                   Política de Privacidad
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a
+                  href="#"
+                  className="py-1 hover:text-white/90  decoration-1 transition-colors focus-visible:underline focus-visible:outline-none"
+                >
                   Cookies
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a
+                  href="#"
+                  className="py-1 hover:text-white/90  decoration-1 transition-colors focus-visible:underline focus-visible:outline-none"
+                >
                   Sobre los anuncios
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a
+                  href="#"
+                  className="py-1 hover:text-white/90  decoration-1 transition-colors focus-visible:underline focus-visible:outline-none"
+                >
                   Accesibilidad
                 </a>
               </li>
             </ul>
 
-            <button
-              className="mt-5 inline-flex items-center  gap-2 rounded-full border border-hover px-4 py-2 text-sm font-bold text-white hover:border-white transition"
-              aria-label="Cambiar idioma"
-            >
-              <svg
-                viewBox="0 0 16 16"
-                className="w-4 h-4 fill-current"
-                aria-hidden="true"
+            <div className="flex flex-col">
+              <a
+                href="#"
+                className=" inline-block text-sm text-white font-semibold hover:underline underline-offset-4 decoration-1 transition-colors focus-visible:underline focus-visible:outline-none"
+                title="Cookies"
               >
-                <path d="M8.152 16H8a8 8 0 1 1 .152 0m-.41-14.202c-.226.273-.463.713-.677 1.323-.369 1.055-.626 2.496-.687 4.129h3.547c-.06-1.633-.318-3.074-.687-4.129-.213-.61-.45-1.05-.676-1.323-.194-.235-.326-.285-.385-.296h-.044c-.055.007-.19.052-.391.296M4.877 7.25c.062-1.771.34-3.386.773-4.624q.148-.427.329-.806a6.51 6.51 0 0 0-4.436 5.43zm-3.334 1.5a6.51 6.51 0 0 0 4.436 5.43 8 8 0 0 1-.33-.806c-.433-1.238-.71-2.853-.772-4.624zm4.835 0c.061 1.633.318 3.074.687 4.129.214.61.451 1.05.677 1.323.202.244.336.29.391.297l.044-.001c.06-.01.19-.061.385-.296.226-.273.463-.713.676-1.323.37-1.055.626-2.496.687-4.129zm5.048 0c-.061 1.771-.339 3.386-.772 4.624q-.123.353-.268.674a6.5 6.5 0 0 0 4.071-5.298zm3.031-1.5a6.51 6.51 0 0 0-4.071-5.298q.145.322.268.674c.433 1.238.711 2.853.772 4.624z"></path>
-              </svg>
-              Español de Latinoamérica
-            </button>
+                Cookies
+              </a>
+
+              <button
+                className=" max-w-max cursor-pointer justify-start mt-2 inline-flex items-center gap-2 rounded-full border border-white/60 px-4 py-2 text-sm font-bold text-white hover:border-white transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40 active:scale-[0.98]"
+                aria-label="Cambiar idioma"
+                title="Cambiar idioma"
+                type="button"
+              >
+                <svg
+                  viewBox="0 0 16 16"
+                  className="w-4 h-4 fill-current"
+                  aria-hidden="true"
+                >
+                  <path d="M8.152 16H8a8 8 0 1 1 .152 0m-.41-14.202c-.226.273-.463.713-.677 1.323-.369 1.055-.626 2.496-.687 4.129h3.547c-.06-1.633-.318-3.074-.687-4.129-.213-.61-.45-1.05-.676-1.323-.194-.235-.326-.285-.385-.296h-.044c-.055.007-.19.052-.391.296M4.877 7.25c.062-1.771.34-3.386.773-4.624q.148-.427.329-.806a6.51 6.51 0 0 0-4.436 5.43zm-3.334 1.5a6.51 6.51 0 0 0 4.436 5.43 8 8 0 0 1-.33-.806c-.433-1.238-.71-2.853-.772-4.624zm4.835 0c.061 1.633.318 3.074.687 4.129.214.61.451 1.05.677 1.323.202.244.336.29.391.297l.044-.001c.06-.01.19-.061.385-.296.226-.273.463-.713.676-1.323.37-1.055.626-2.496.687-4.129zm5.048 0c-.061 1.771-.339 3.386-.772 4.624q-.123.353-.268.674a6.5 6.5 0 0 0 4.071-5.298zm3.031-1.5a6.51 6.51 0 0 0-4.071-5.298q.145.322.268.674c.433 1.238.711 2.853.772 4.624z"></path>
+                </svg>
+                Español de Latinoamérica
+              </button>
+            </div>
           </footer>
         </div>
       </aside>
 
-      <section className="px-7  mr-1 bg-gradient-to-b from-fondoHouse to-cardBaseContainer  w-3/4 rounded-xl h-[555.600px] overflow-auto">
+      <section className="pl-7 mr-2 bg-gradient-to-b from-fondoHouse to-cardBaseContainer w-3/4 rounded-xl h-[555.600px] overflow-auto">
         <div className="flex justify-between py-5">
           <button className="text-white hover:underline font-bold text-2xl cursor-pointer px-2">
             Canciones del momento
@@ -176,7 +204,6 @@ export default function Home() {
             />
           </MusicCarrusel>
         </div>
-
         <div className="flex justify-between py-5">
           <button className="text-white hover:underline font-bold text-2xl cursor-pointer px-2">
             Artistas populares
@@ -251,7 +278,6 @@ export default function Home() {
             />
           </MusicCarrusel>
         </div>
-
         <div className="flex justify-between py-5">
           <button className="text-white hover:underline font-bold text-2xl cursor-pointer px-2">
             Álbumes y sencillos populares
@@ -485,7 +511,6 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-
               <div>
                 <h3 className="text-white font-bold mb-3 text-base">
                   Comunidades
@@ -518,7 +543,6 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-
               <div>
                 <h3 className="text-white font-bold mb-3 text-base">
                   Enlaces útiles
@@ -546,7 +570,6 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-
               <div>
                 <h3 className="text-white font-bold mb-3 text-base">
                   Planes de Spotify
@@ -580,7 +603,6 @@ export default function Home() {
                 </ul>
               </div>
             </div>
-
             <div className="flex space-x-4 mt-8 md:mt-0">
               <a
                 href="#"
@@ -605,7 +627,6 @@ export default function Home() {
                   />
                 </svg>
               </a>
-
               <a
                 href="#"
                 className="group w-10 h-10 rounded-full bg-fondoHouse flex items-center justify-center transition-colors duration-200 hover:bg-Enlaces focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
@@ -647,7 +668,7 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-10 border-t border-BarraFooter px-4 py-5 "></div>
-          <div className="text-house text-sm  font-bold">© 2025 Spotify AB</div>
+          <div className="text-house text-sm font-bold">© 2025 Spotify AB</div>
         </footer>
       </section>
     </div>

@@ -4,9 +4,9 @@ import CardButtonHeader from "../ui/CardButtonHeader";
 
 export default function Header() {
   return (
-    <header>
-      <div className="w-full h-[15%] bg-fondo flex ">
-        <div className="flex flex-row py-[8px] pl-2  items-center ">
+    <header className="bg-fondo w-full flex items-center justify-center h-[5%]">
+      <div className="w-full 2xl:max-w-[1920px] bg-fondo flex justify-between">
+        <div className="flex flex-row py-[8px] pl-2  items-center">
           <span className="text-white pl-5">
             <svg
               role="img"
@@ -26,8 +26,8 @@ export default function Header() {
             </svg>
           </span>
         </div>
-        <div className=" pl-7 flex flex-row items-center gap-2">
-          <button className="text-house p-[11px] rounded-full  border border-black bg-fondoHouse hover:bg-black transition-all duration-300 delay-80 ">
+        <div className="  flex flex-row items-center gap-2">
+          <button className="text-house p-[12px] rounded-full  border border-black bg-fondoHouse hover:bg-black transition-all duration-300 delay-80 ">
             <svg
               data-encore-id="icon"
               role="img"
@@ -73,7 +73,7 @@ export default function Header() {
 
           <CardButtonHeader title="Regístrate" />
           <button
-            className="ml-2
+            className="mx-2
                 px-8 py-3 rounded-3xl 
                 bg-white text-black font-bold 
                 hover:bg-gray-200 

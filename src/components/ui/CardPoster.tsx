@@ -61,10 +61,10 @@ export default function CardPoster({
             aria-label={`Reproducir ${title}`}
             className={cx(
               playBtnPos,
-              "grid place-items-center w-10 h-10 rounded-full bg-green-500 shadow-lg transition-transform duration-200 hover:scale-105"
+              "grid place-items-center w-12 h-12 rounded-full bg-green-500 shadow-lg transition-transform duration-200 hover:scale-105 cursor-pointer"
             )}
           >
-            <svg role="img" viewBox="0 0 24 24" className="w-5 h-5 fill-black">
+            <svg role="img" viewBox="0 0 24 24" className="w-6 h-6 fill-black">
               <title>Reproducir {title}</title>
               <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path>
             </svg>
