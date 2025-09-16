@@ -625,7 +625,6 @@ export default function Home() {
                   />
                 </svg>
               </a>
-
               <a
                 href="#"
                 className="group w-10 h-10 rounded-full bg-fondoHouse flex items-center justify-center transition-colors duration-200 hover:bg-Enlaces focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
