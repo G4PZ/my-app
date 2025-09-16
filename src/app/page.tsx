@@ -28,11 +28,13 @@ export default function Home() {
           </div>
           <div className="p-2 space-y-4 overflow-auto h-[323px]">
             <section className="bg-fondoHouse px-5 py-3 rounded-xl">
-              <h2 className="font-bold text-white">Crea tu primera playlist</h2>
-              <h3 className="py-2 font-semibold text-white text-[16px]">
+              <h2 className="font-bold text-white ">
+                Crea tu primera playlist
+              </h2>
+              <h3 className="py-2 font-semibold text-white text-sm">
                 ¡Es muy fácil! Te vamos a ayudar
               </h3>
-              <button className="mt-2 mb-1 px-4 py-1 rounded-3xl bg-white text-black font-bold hover:bg-gray-200 transition-colors duration-200 cursor-pointer">
+              <button className="text-sm mt-2 mb-1 px-4 py-1 rounded-3xl bg-white text-black font-bold hover:bg-gray-200 transition-colors duration-200 cursor-pointer">
                 Crear playlist
               </button>
             </section>
@@ -40,10 +42,10 @@ export default function Home() {
               <h2 className="font-bold text-white">
                 Busquemos algunos podcasts para seguir
               </h2>
-              <h3 className="py-2 font-semibold text-white text-[16px]">
+              <h3 className="py-2 font-semibold text-white text-sm">
                 Te mantendremos al tanto de los nuevos episodios.
               </h3>
-              <button className=" cursor-pointer mt-2 mb-1 px-4 py-1 rounded-3xl bg-white text-black font-bold hover:bg-gray-200 transition-colors duration-200">
+              <button className=" text-sm cursor-pointer mt-2 mb-1 px-4 py-1 rounded-3xl bg-white text-black font-bold hover:bg-gray-200 transition-colors duration-200">
                 Explorar podcasts
               </button>
             </section>
@@ -134,7 +136,7 @@ export default function Home() {
           <button className="text-white hover:underline font-bold text-2xl cursor-pointer px-2">
             Canciones del momento
           </button>
-          <button className="hover:underline text-house cursor-pointer font-bold">
+          <button className="hover:underline text-house cursor-pointer font-bold text-sm">
             Mostrar todo
           </button>
         </div>
@@ -208,7 +210,7 @@ export default function Home() {
           <button className="text-white hover:underline font-bold text-2xl cursor-pointer px-2">
             Artistas populares
           </button>
-          <button className="hover:underline text-house cursor-pointer font-bold">
+          <button className="hover:underline text-house cursor-pointer font-bold text-sm">
             Mostrar todo
           </button>
         </div>
@@ -282,7 +284,7 @@ export default function Home() {
           <button className="text-white hover:underline font-bold text-2xl cursor-pointer px-2">
             Álbumes y sencillos populares
           </button>
-          <button className="hover:underline text-house cursor-pointer font-bold">
+          <button className="hover:underline text-house cursor-pointer font-bold text-sm">
             Mostrar todo
           </button>
         </div>
@@ -356,7 +358,7 @@ export default function Home() {
           <button className="text-white hover:underline font-bold text-2xl cursor-pointer px-2">
             Estaciones populares
           </button>
-          <button className="hover:underline text-house cursor-pointer font-bold">
+          <button className="hover:underline text-house cursor-pointer font-bold text-sm">
             Mostrar todo
           </button>
         </div>
@@ -430,7 +432,7 @@ export default function Home() {
           <button className="text-white hover:underline font-bold text-2xl cursor-pointer px-2">
             Listas destacadas
           </button>
-          <button className="hover:underline text-house cursor-pointer font-bold">
+          <button className="hover:underline text-house cursor-pointer font-bold text-sm">
             Mostrar todo
           </button>
         </div>

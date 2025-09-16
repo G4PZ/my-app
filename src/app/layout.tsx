@@ -34,11 +34,9 @@ export default function RootLayout({
     <html lang="es" className="h-full bg-black">
       <body
         className={[
-          // tus fuentes
           geistSans.variable,
           geistMono.variable,
           inter.variable,
-          // layout y fondo
           "antialiased font-inter",
           "min-h-dvh w-screen overflow-x-hidden",
           "bg-black text-white",
@@ -46,13 +44,9 @@ export default function RootLayout({
         ].join(" ")}
       >
         <Header />
-
-        {/* El main empuja el footer al fondo */}
         <main className="flex-1 w-full">
-          {/* Contenido centrado con límite de ancho */}
           <div className="mx-auto w-full max-w-[1920px]">{children}</div>
         </main>
-
         <Footer />
       </body>
     </html>
